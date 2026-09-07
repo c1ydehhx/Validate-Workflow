@@ -10,4 +10,4 @@ jobs:
     steps:
     - name: APT install
       run: |
-        sudo apt-get install build-essentials
+        sudo apt-get update & sudo apt-get install build-essentials
