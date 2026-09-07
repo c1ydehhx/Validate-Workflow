@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: APT install
+    - name: apt install
       run: |
         sudo apt-get update & sudo apt-get install build-essentials
+
+    - name: run user's code
+      run: |
+        python3 main.py
