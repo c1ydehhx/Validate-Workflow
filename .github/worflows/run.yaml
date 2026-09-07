@@ -1,0 +1,13 @@
+name: Build and Test
+
+on:
+  push:
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: APT install
+      run: |
+        apt-get install build-essentials
