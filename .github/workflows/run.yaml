@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: apt install
       run: |
-        sudo apt-get update & sudo apt-get install build-essentials
+        sudo apt-get update & sudo apt-get install build-essential
 
     - name: run user's code
       run: |
